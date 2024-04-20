@@ -25,7 +25,7 @@ The 'requests' package is very chatty on the INFO logging level.  Change its log
 something greater than INFO (i.e. not INFO or DEBUG) will cause it to not log its INFO and DEBUG messages to the
 default logger.  This reduces the size of our log files.
 """
-logging.getLogger("requests").setLevel(logging.WARNING)
+logging.getLogger("requests").setLevel(logging.DEBUG)
 
 
 class FMC(object):

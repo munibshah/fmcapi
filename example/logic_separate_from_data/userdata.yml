@@ -2,13 +2,13 @@
 version: 1
 
 fmc:
-  host: 10.0.0.10
+  host: 192.168.1.150
   username: apiadmin
-  password: Admin123
+  password: Amazon@123
   autodeploy: True
   file_logging: hq_deployment.log
   limit: 2000
-  debug: False
+  debug: True
 
 security_zones:
   - name: inside
@@ -66,7 +66,7 @@ nat_policies:
           enabled: True
 
 device_records:
-  - hostname: 10.0.0.254
+  - hostname: 192.168.1.152
     name: hq-ftd
     type: device
     registration_key: cisco123

@@ -11,7 +11,7 @@ fmc:
   debug: True
 
 security_zones:
-  - name: inside
+  - name: inside1
   - name: outside
   - name: dmz
 

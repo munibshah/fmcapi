@@ -13,9 +13,9 @@ def main():
     10.0.0.10 cisco123' has already been manually typed on the FTD's CLI.
     """
     # ### Set these variables to match your environment. ### #
-    host = "10.0.0.10"
+    host = "192.168.1.150"
     username = "apiadmin"
-    password = "Admin123"
+    password = "Amazon@123"
 
     with fmcapi.FMC(
         host=host,
@@ -101,7 +101,7 @@ def main():
         # Add hq-ftd device to FMC
         hq_ftd = fmcapi.DeviceRecords(fmc=fmc1)
         # Minimum things set.
-        hq_ftd.hostName = "10.0.0.254"
+        hq_ftd.hostName = "192.168.1.152"
         hq_ftd.regKey = "cisco123"
         hq_ftd.acp(name=acp.name)
         # Other stuff I want set.
